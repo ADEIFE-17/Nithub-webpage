@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./robotic-blog.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/index/unilag-nithub-logo.png" />
+        </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+
+        <div class="links" id="nav-links">
+          <ul id="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Programs-training.html">Programs</a></li>
+            <li><a href="./Event.html">Events</a></li>
+            <li><a href="./Blog.html">Blogs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="topic">
+      <div class="header-topic">
+        <h2>
+          The Future of Robotics : Amazing ways <br />Robots will change the
+          world.
+        </h2>
+        <p>
+          Do you not wonder how a thing (phone) can connect to another thing
+          (coffee machine)? <br />
+          Well, that is the technology of Internet of Things, popularly called
+          IoT.
+        </p>
+      </div>
+    </div>
+
+    <div class="dates">
+      <div class="date">
+        <small>Date</small>
+        <p>Feb 8, 2024</p>
+      </div>
+      <div class="date">
+        <small>Read time</small>
+        <p>4 min read</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-img">
+        <div class="image">
+          <img src="./images/Blogs/Rectangle 222.png" />
+        </div>
+        <p>
+          In the ever-evolving landscape of technology, one phenomenon stands
+          out as a beacon of innovation: robotics. From science fiction
+          fantasies to real-world applications, robots are poised to transform
+          virtually every aspect of our lives in ways both astounding and
+          awe-inspiring. As we peer into the future, it becomes increasingly
+          clear that the age of robotics is upon us, and the possibilities are
+          limitless. <br />
+          <br />Imagine a world where robots serve as our tireless companions,
+          augmenting our capabilities and enhancing our quality of life. Picture
+          autonomous vehicles navigating bustling city streets with precision
+          and efficiency, revolutionizing transportation and reducing traffic
+          congestion. Envision robotic surgeons performing intricate procedures
+          with unmatched precision, leading to faster recovery times and
+          improved patient outcomes. <br />
+          <br />But the impact of robotics extends far beyond the realm of
+          convenience and healthcare. In agriculture, robots are revolutionizing
+          farming practices, increasing efficiency, and sustainability while
+          minimizing the need for manual labor. In manufacturing, robotic
+          automation is streamlining production processes, reducing costs, and
+          accelerating time-to-market for innovative products. <br />
+          <br />Furthermore, robots are poised to play a crucial role in
+          disaster response and environmental conservation efforts. From search
+          and rescue missions in hazardous conditions to monitoring and
+          protecting fragile ecosystems, robots offer unparalleled capabilities
+          to address some of the most pressing challenges facing our planet.
+          <br />
+          <br />However, with great power comes great responsibility. As we
+          embrace the potential of robotics, it is imperative that we also
+          consider the ethical and societal implications of their widespread
+          adoption. Questions surrounding job displacement, data privacy, and
+          algorithmic bias must be carefully addressed to ensure that the
+          benefits of robotics are equitably distributed and responsibly
+          managed. <br />
+          <br />In conclusion, the future of robotics holds tremendous promise
+          for humanity. As we continue to push the boundaries of innovation and
+          explore new frontiers, it is clear that robots will play an
+          increasingly integral role in shaping the world of tomorrow. By
+          harnessing the transformative power of robotics with wisdom and
+          foresight, we can unlock a future filled with endless possibilities
+          and untold opportunities for progress.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="unilag" src="./images/index/unilag-logo.png" />
+        <img class="nithub" src="./images/index/nithub-logo.png" />
+      </div>
+      <div class="footer-top">
+        <div class="footer-section">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <i class="fab fa-instagram">
+              <img src="./images/index/Frame (2).png" />
+            </i>
+            <i class="fab fa-twitter">
+              <img src="./images/index/Vector (1).png" />
+            </i>
+            <i class="fab fa-linkedin">
+              <img src="./images/index/XMLID_801_ (1).png" />
+            </i>
+          </div>
+          <h4>Contact us</h4>
+          <p>Nithub2017@hotmail.com</p>
+          <p>+2348023455678</p>
+        </div>
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>Who we are</p>
+          <p>The Management</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <p>Wi-fi</p>
+          <p>Security assured</p>
+          <p>Comfortability and Accessibility</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Address</h4>
+          <p>University of Lagos,</p>
+          <p>Akoka Yaba, Lagos.</p>
+          <p>101283</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NitHub. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+
+      const navLinks = document.querySelectorAll("#navbar a");
+
+      navLinks.forEach((link) => {
+        const linkHref = link.getAttribute("href");
+
+        if (linkHref === currentPage || linkHref === "./" + currentPage) {
+          link.classList.add("active");
+        }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navContainer = document.getElementById("nav-links");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          navContainer.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

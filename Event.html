@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT</title>
+    <link rel="stylesheet" href="./Event-style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/index/unilag-nithub-logo.png" />
+        </div>
+
+        <div class="hamburger" id="hamburger">☰</div>
+
+        <div class="links" id="nav-links">
+          <ul id="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Programs.html">Programs</a></li>
+            <li><a href="./Event.html">Events</a></li>
+            <li><a href="./Blog.html">Blogs</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="title">
+        <h1>Event</h1>
+      </div>
+    </header>
+
+    <div class="text">
+      <h3>All events</h3>
+    </div>
+
+    <div class="events">
+      <div class="event">
+        <div class="event-text">
+          <h2>Nidus Ideation</h2>
+          <p>
+            The Entrepreneurs workshop: Using design thinking to ignite early
+            stage success.
+          </p>
+          <p>Click on the link to register</p>
+          <ul>
+            <li>
+              <a href="#"
+                >https://events.bloomberglive.com/sustainable-business-summit-singapore2022?promo=BliveWeb&tr=true</a
+              >
+            </li>
+          </ul>
+
+          <p>Date:28th of April 2023 | 11:00AM</p>
+        </div>
+        <div class="event-image">
+          <img src="./images/index/NIDUS-1-1024x1024 1.png" />
+        </div>
+      </div>
+
+      <div class="event Event2">
+        <div class="event-image">
+          <img src="./images/Event/event2.png" />
+        </div>
+        <div class="event-text">
+          <h2>LAB 2 FAB</h2>
+          <p>Turn your ideas and research outputs to products</p>
+          <p>Click on the link to register</p>
+          <ul>
+            <li>
+              <a href="#"
+                >https://events.bloomberglive.com/sustainable-business-summit-singapore2022?promo=BliveWeb&tr=true</a
+              >
+            </li>
+          </ul>
+
+          <p>Date:28th of April 2023 | 11:00AM</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-text">
+          <h2>NITDATA 2.1</h2>
+          <p>
+            The Entrepreneurs workshop: Using design thinking to ignite early
+            stage success.
+          </p>
+          <p>Click on the link to register</p>
+          <ul>
+            <li>
+              <a href="#"
+                >https://events.bloomberglive.com/sustainable-business-summit-singapore2022?promo=BliveWeb&tr=true</a
+              >
+            </li>
+          </ul>
+
+          <p>Date:28th of April 2023 | 11:00AM</p>
+        </div>
+        <div class="event-image">
+          <img src="./images/index/NIDUS-1-1024x1024 1.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="get-in-touch">
+      <div class="get-in">
+        <h2>Get in touch</h2>
+        <p>
+          For all enquires and questions on these trainings,<br />please reach
+          out to us.
+        </p>
+        <div class="contact-info">
+          <span>📞 08074355678</span>
+          <span class="divider">|</span>
+          <span>📧 Kelegbe435@gmail.com</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img class="unilag" src="./images/index/unilag-logo.png" />
+        <img class="nithub" src="./images/index/nithub-logo.png" />
+      </div>
+      <div class="footer-top">
+        <div class="footer-section">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <i class="fab fa-instagram">
+              <img src="./images/index/Frame (2).png" />
+            </i>
+            <i class="fab fa-twitter">
+              <img src="./images/index/Vector (1).png" />
+            </i>
+            <i class="fab fa-linkedin">
+              <img src="./images/index/XMLID_801_ (1).png" />
+            </i>
+          </div>
+          <h4>Contact us</h4>
+          <p>Nithub2017@hotmail.com</p>
+          <p>+2348023455678</p>
+        </div>
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>Who we are</p>
+          <p>The Management</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <p>Wi-fi</p>
+          <p>Security assured</p>
+          <p>Comfortability and Accessibility</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Address</h4>
+          <p>University of Lagos,</p>
+          <p>Akoka Yaba, Lagos.</p>
+          <p>101283</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 NitHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+
+      const navLinks = document.querySelectorAll("#navbar a");
+
+      navLinks.forEach((link) => {
+        const linkHref = link.getAttribute("href");
+
+        if (linkHref === currentPage || linkHref === "./" + currentPage) {
+          link.classList.add("active");
+        }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navContainer = document.getElementById("nav-links");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          navContainer.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
