@@ -7,6 +7,7 @@ body {
   background-color: #e6e8e8;
   margin: 0;
   padding: 0;
+  font-family: 'IBM Plex Sans', Courier, monospace;
 }
 .logo {
   display: flex;
@@ -104,7 +105,8 @@ nav {
   max-width: 500px;
 }
 .left-text h1 {
-  font-size: 42px;
+  font-size: 64px;
+  font-weight: 400;
 }
 .hero-image {
   display: flex;
@@ -114,7 +116,8 @@ nav {
   color: #3b7c23;
 }
 .top p {
-  font-size: 1.1rem;
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 20px;
   color: #232323;
 }
@@ -122,6 +125,8 @@ nav {
   display: inline-block;
   background-color: #3b7c23;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
@@ -227,7 +232,8 @@ nav {
   border: 1px solid #27a810;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-abt:hover {
@@ -243,11 +249,12 @@ nav {
   margin-left: 50px;
 }
 .service h4 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
 }
 .services h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 .green-text {
@@ -292,12 +299,13 @@ nav {
   color: white;
 }
 .title {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .description {
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -349,18 +357,21 @@ nav {
   margin-right: 10%;
 }
 .title-1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 21.5px;
+  font-weight: 700;
   color: #323232;
   margin-bottom: 5px;
 }
 .date-1,
 .time {
-  font-size: 14px;
+  font-size: 14.35px;
+  font-weight: 400;
   color: #575757;
 }
 .link a {
   color: #575757;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* partners section */
@@ -622,7 +633,7 @@ nav {
   }
 
   .about-text p {
-    font-size: 15px;
+    /* font-size: 15px; */
   }
 
   .about-image img {
@@ -637,7 +648,7 @@ nav {
   }
 
   .service h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     line-height: 1.4;
   }
 
@@ -648,7 +659,7 @@ nav {
   }
 
   .service h2 {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     line-height: 1.4;
   }
 
@@ -663,13 +674,13 @@ nav {
     height: 400px;
   }
 
-  .title {
+  /* .title {
     font-size: 16px;
   }
 
   .description {
     font-size: 14px;
-  }
+  } */
   .event-3 {
     flex-direction: column;
     align-items: center;
@@ -704,7 +715,7 @@ nav {
   .link {
     margin-right: 0;
   }
-
+/* 
   .title-1 {
     font-size: 18px;
   }
@@ -716,7 +727,7 @@ nav {
 
   .link a {
     font-size: 14px;
-  }
+  } */
   .space {
     width: 90%;
     padding: 30px 16px;
@@ -724,12 +735,12 @@ nav {
   }
 
   .space p {
-    font-size: 24px;
+    /* font-size: 24px; */
     line-height: 1.4;
   }
 
   .space button {
-    font-size: 16px;
+    /* font-size: 16px; */
     padding: 10px 20px;
   }
   .review {
@@ -737,7 +748,7 @@ nav {
   }
 
   .review h2 {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     margin-bottom: 30px;
     text-align: center;
   }
@@ -756,7 +767,7 @@ nav {
     padding: 30px 16px;
   }
 
-  .ready h2 {
+  /* .ready h2 {
     font-size: 24px;
   }
 
@@ -766,5 +777,5 @@ nav {
 
   .ready a {
     font-size: 14px;
-  }
+  } */
 }
