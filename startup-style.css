@@ -170,7 +170,7 @@ p.under {
 }
 .incubation-title img {
   position: absolute;
-  left: 16.2%;
+  left: 17%;
   top: -75%;
 }
 
@@ -241,6 +241,10 @@ h3.title {
 .num {
   font-size: 20px;
   font-weight: 500;
+}
+.num{
+  text-decoration: none;
+  color: #c1c1c1;
 }
 
 /* footer section */
@@ -443,7 +447,7 @@ i.fab {
   .incubation-title img {
     width: 46px;
     height: 45px;
-    left: 32%;
+    left: 35%;
     top: -55%;
   }
   .highlight {

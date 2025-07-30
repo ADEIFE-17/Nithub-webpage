@@ -148,6 +148,10 @@ ul#categoryNav {
   font-size: 20px;
   font-weight: 500;
 }
+.num{
+  text-decoration: none;
+  color: #c1c1c1;
+}
 
 /* footer section */
 .footer-logo {
