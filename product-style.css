@@ -309,9 +309,9 @@ a.top-btn {
   font-size: 20px;
   font-weight: 500;
 }
-.num{
+.num,
+.numnum{
   text-decoration: none;
-  color: #c1c1c1;
 }
 
 /* footer section */
