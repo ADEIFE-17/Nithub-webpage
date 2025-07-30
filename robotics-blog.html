@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Read Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./robotic-blog.css" />
   </head>
   <body>
@@ -109,17 +131,11 @@
       </div>
       <div class="footer-top">
         <div class="footer-section">
-          <h4>Follow us</h4>
+          <p>Follow us</p>
           <div class="social-icons">
-            <i class="fab fa-instagram">
-              <img src="./images/index/Frame (2).png" />
-            </i>
-            <i class="fab fa-twitter">
-              <img src="./images/index/Vector (1).png" />
-            </i>
-            <i class="fab fa-linkedin">
-              <img src="./images/index/XMLID_801_ (1).png" />
-            </i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
           </div>
           <h4>Contact us</h4>
           <p>Nithub2017@hotmail.com</p>
@@ -150,6 +166,63 @@
         <p>&copy; 2025 NitHub. All rights reserved.</p>
       </div>
     </footer>
+    <!-- <script>
+      const currentPage = window.location.pathname.split("/").pop();
+
+      const navLinks = document.querySelectorAll("#navbar a");
+
+      const blogSubPages = [
+        "Blog.html",
+        "robotics-blog.html"
+      ]
+
+      navLinks.forEach((link) => {
+        const linkHref = link.getAttribute("href");
+
+        if (
+          (href.invludes("Blog.html") && blogSubPages.inculdes(currentPage)) || href === currentPage || href === "./" + currentPage
+        ) {
+          link.classList.add ("active");
+        }
+      
+
+        // if (linkHref === currentPage || linkHref === "./" + currentPage) {
+        //   link.classList.add("active");
+        // }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navContainer = document.getElementById("nav-links");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          navContainer.classList.toggle("active");
+        });
+      }
+    </script> -->
+
+    <!-- <script>
+      const currentPage = window.location.pathname.split("/").pop();
+
+      const navLinks = document.querySelectorAll("#navbar a");
+
+      navLinks.forEach((link) => {
+        const linkHref = link.getAttribute("href");
+
+        if (linkHref === currentPage || linkHref === "./" + currentPage) {
+          link.classList.add("active");
+        }
+      });
+
+      const hamburger = document.getElementById("hamburger");
+      const navContainer = document.getElementById("nav-links");
+
+      if (hamburger) {
+        hamburger.addEventListener("click", () => {
+          navContainer.classList.toggle("active");
+        });
+      }
+    </script> -->
     <script>
       const currentPage = window.location.pathname.split("/").pop();
 

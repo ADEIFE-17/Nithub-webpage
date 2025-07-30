@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
 }
 
 /* header section */
@@ -31,18 +32,12 @@ body {
 }
 .links a {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
 }
 .links a:hover {
   color: #7dec54;
-}
-/* !!!!!!!!!!!!!!! */
-.links a.active {
-  color: #3b7c23;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 nav {
@@ -59,6 +54,11 @@ nav {
 header {
   padding: 20px;
 }
+/* !!!!!!!!!!!!!!! */
+.links a.active {
+  color: #7dec54;
+  font-weight: 500;
+}
 
 /* topic section */
 .topic {
@@ -71,12 +71,15 @@ header {
 }
 .header-topic h2 {
   padding: 10px;
-  font-size: 2em;
-  font-weight: 100;
+  font-family: "Junge", Courier, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
 }
 .header-topic p {
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b6b6b;
   line-height: 1.5;
 }
 
@@ -85,7 +88,7 @@ header {
   display: flex;
   justify-content: flex-end;
   width: 40%;
-  margin: 0 auto;
+  margin: 0 40%;
   gap: 2em;
   margin-bottom: 1rem;
 }
@@ -95,18 +98,22 @@ header {
 .date small {
   display: block;
   color: #888;
-  font-size: 0.75rem;
+  font-family: "Roboto", Courier, sans-serif;
+  font-size: 12.8px;
+  font-weight: 400;
   margin-bottom: 0.2rem;
 }
 .date p {
   margin: 0;
-  font-size: 0.875rem;
+  font-family: "Junge", Courier, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   color: #1c1c1c;
 }
 
 /* content section */
 .content-img {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 2rem;
   box-shadow: 0 4px 6px -1px rgba(239, 239, 239, 0.619),
@@ -115,19 +122,20 @@ header {
 .image {
   margin-left: auto;
   margin-right: auto;
-  max-width: 550px;
+  max-width: 800px;
 }
 .image img {
   width: 100%;
   object-fit: cover;
 }
 .content p {
-  font-size: 1rem;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
   color: #2d3748;
   line-height: 1.625;
   margin-bottom: 1rem;
 }
-
 
 /* footer section */
 .footer-logo {
@@ -150,26 +158,43 @@ header {
 .footer-top {
   display: flex;
   justify-content: space-evenly;
-  /* gap: 20px; */
+  gap: 20px;
 }
-.footer-section p,
+.footer-section p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-section h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
 .footer-section i {
-  margin: 4px 0;
+  margin: 5px 0;
   font-size: 14px;
-}
-.social-icons i {
-  font-size: 20px;
-  margin-right: 10px;
-  cursor: pointer;
 }
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .social-icons {
   display: flex;
   align-items: center;
+}
+i.fab {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 20px;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -177,16 +202,15 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    width: 90%;
+    width: 100%;
   }
-  .logo{
+  .logo {
     width: 30%;
   }
 
   .hamburger {
     display: block;
-    color: white;
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   .links {
@@ -194,7 +218,7 @@ header {
     display: none;
     flex-direction: column;
     margin-top: 10px;
-    margin-left: 70%;
+    margin-left: 80%;
   }
 
   .links.active {
@@ -206,9 +230,6 @@ header {
     gap: 15px;
   }
 
-  .contact {
-    margin-top: 10px;
-  }
   .footer-top {
     flex-direction: column;
     align-items: center;
@@ -233,16 +254,56 @@ header {
     gap: 10px;
     margin-bottom: 20px;
   }
-  .header-topic{
+  .header-topic {
     width: 100%;
   }
-  .content-img{
-    width: 85%;
+  .content-img {
+    width: 90%;
   }
-  .dates{
-    width: 80%;
+  .dates {
+    width: 48%;
   }
-  .topic{
+  .topic {
     padding: 10px;
   }
+  .header-topic h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .header-topic p {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .date small {
+    font-size: 10.8px;
+  }
+  .date p {
+    font-size: 12px;
+  }
+  .content-img p {
+    font-size: 12px;
+  }
+  .image {
+    max-width: 350px;
+  }
 }
+@media (min-width: 768px) and (max-width: 1160px) {
+   nav {
+    width: 100%;
+  }
+  .header-topic {
+    width: 100%;
+  }
+  .dates {
+    width: 47%;
+  }
+  .content-img{
+    width: 95%;
+  }
+  .image {
+    max-width: 700px;
+  }
+  
+  
+}
+

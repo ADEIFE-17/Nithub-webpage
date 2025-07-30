@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Space</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Junge&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./workspace-style.css" />
   </head>
   <body>
@@ -14,11 +30,11 @@
         </div>
 
         <div class="hamburger" id="hamburger">☰</div>
-        
+
         <div class="links" id="nav-links">
           <ul id="navbar">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./Programs.html">Programs</a></li>
+            <li><a href="./Programs-training.html">Programs</a></li>
             <li><a href="./Event.html">Events</a></li>
             <li><a href="./Blog.html">Blogs</a></li>
           </ul>
@@ -63,9 +79,11 @@
           out to us.
         </p>
         <div class="contact-info">
-          <span>📞 08074355678</span>
+          <i class="fa-solid fa-phone-volume"></i>
+          <span class="num"> 08074355678</span>
           <span class="divider">|</span>
-          <span>📧 Kelegbe435@gmail.com</span>
+          <i class="fa-solid fa-envelope"></i>
+          <span class="email"> Kelegbe435@gmail.com</span>
         </div>
       </div>
     </div>
@@ -77,17 +95,11 @@
       </div>
       <div class="footer-top">
         <div class="footer-section">
-          <h4>Follow us</h4>
+          <p>Follow us</p>
           <div class="social-icons">
-            <i class="fab fa-instagram">
-              <img src="./images/index/Frame (2).png" alt="" />
-            </i>
-            <i class="fab fa-twitter">
-              <img src="./images/index/Vector (1).png" alt="" />
-            </i>
-            <i class="fab fa-linkedin">
-              <img src="./images/index/XMLID_801_ (1).png" alt="" />
-            </i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
           </div>
           <h4>Contact us</h4>
           <p>Nithub2017@hotmail.com</p>
@@ -125,7 +137,7 @@
       const navLinks = document.querySelectorAll("#navbar a");
 
       const programSubPages = [
-        "Programs.html",
+        "Programs-training.html",
         "Programs-training.html",
         "startup-incubation.html",
         "Product-development.html",
@@ -135,7 +147,7 @@
       navLinks.forEach((link) => {
         const href = link.getAttribute("href");
         if (
-          (href.includes("Programs.html") &&
+          (href.includes("Programs-training.html") &&
             programSubPages.includes(currentPage)) ||
           href === currentPage ||
           href === "./" + currentPage
