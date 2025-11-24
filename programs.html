@@ -8,22 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <img src="./images/index/unilag-nithub-logo.png" />
-        </div>
-
-        <div class="hamburger" id="hamburger">☰</div>
-
-        <div class="links" id="nav-links">
-          <ul id="navbar">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./Programs.html">Programs</a></li>
-            <li><a href="./Event.html">Events</a></li>
-            <li><a href="./Blog.html">Blogs</a></li>
-          </ul>
-        </div>
-      </nav>
+      <nav id="nav-bar"></nav>
       <div class="title">
         <h1>Programs</h1>
         <p>
@@ -123,44 +108,49 @@
     <script>
       const currentPage = window.location.pathname.split("/").pop();
 
-      const navLinks = document.querySelectorAll("#navbar a");
-
-      navLinks.forEach((link) => {
-        const linkHref = link.getAttribute("href");
-
-        if (linkHref === currentPage || linkHref === "./" + currentPage) {
-          link.classList.add("active");
-        }
-      });
-
-      const categoryLinks = document.querySelectorAll("#categoryNav a");
-
       const programPages = [
         "Programs-training.html",
         "startup-incubation.html",
         "Product-development.html",
         "workspace.html",
       ];
+      insertNavbar()
 
-      categoryLinks.forEach((link) => {
-        const href = link.getAttribute("href");
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("nav-bar").innerHTML = html;
 
-        if (
-          href.includes("Programs-training.html") &&
-          programPages.includes(currentPage)
-        ) {
-          link.classList.add("active");
-        }
-      });
+          // Now that navbar is in DOM, run your DOM code
 
-      const hamburger = document.getElementById("hamburger");
-      const navContainer = document.getElementById("nav-links");
+          const navLinks = document.querySelectorAll("#navbar a");
+          navLinks.forEach((link) => {
+            const linkHref = link.getAttribute("href");
+            if (linkHref === currentPage || linkHref === "./" + currentPage) {
+              link.classList.add("active");
+            }
+          });
 
-      if (hamburger) {
-        hamburger.addEventListener("click", () => {
-          navContainer.classList.toggle("active");
+          const categoryLinks = document.querySelectorAll("#categoryNav a");
+          categoryLinks.forEach((link) => {
+            const href = link.getAttribute("href");
+            if (
+              href.includes("Programs-training.html") &&
+              programPages.includes(currentPage)
+            ) {
+              link.classList.add("active");
+            }
+          });
+
+          const hamburger = document.getElementById("hamburger");
+          const navContainer = document.getElementById("nav-links");
+
+          if (hamburger) {
+            hamburger.addEventListener("click", () => {
+              navContainer.classList.toggle("active");
+            });
+          }
         });
-      }
     </script>
   </body>
 </html>

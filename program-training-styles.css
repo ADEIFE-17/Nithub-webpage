@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
 }
 /* header section */
 .logo {
@@ -26,7 +27,8 @@ body {
 }
 .links a {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
 }
 .links a:hover {
@@ -50,25 +52,33 @@ header {
   margin-top: 3%;
 }
 .title p {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 700;
   margin-top: 0;
 }
 .title {
   margin-left: 5%;
+  font-family: "Junge", Courier, sans-serif;
 }
 /* !!!!!!!!!!!!!! */
 .links a.active {
-  color: #3b7c23;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
+  color: #7dec54;
+  font-weight: 500;
 }
 
 /* category section */
 .category {
-  padding: 1%;
-  margin: 2%;
+  padding: 1% 2%;
   border-bottom: 1px solid #87e563;
+  background-color: #4c83370d;
+}
+ul#categoryNav {
+  padding: 1%;
+}
+.category h3 {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
 }
 .category-links ul {
   list-style: none;
@@ -83,7 +93,8 @@ header {
 }
 .category-links a {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   color: #232323;
 }
 .cat-link:hover {
@@ -97,9 +108,9 @@ header {
 .category-links a.active {
   background-color: #4c8337;
   color: white;
-  padding: 10px;
+  padding: 8px 17px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* grid section */
@@ -129,15 +140,18 @@ header {
   transform: scale(1.03);
 }
 .program-card h3 {
-  font-size: 1.5rem;
+  font-size: 28px;
+  font-weight: 700;
 }
 .program-card p {
-  font-size: 0.95rem;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.5;
   margin-bottom: 8%;
 }
 .program-card a {
   text-decoration: none;
+  font-size: 18px;
   font-weight: 500;
   color: #31671d;
 }
@@ -147,8 +161,6 @@ header {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  font-weight: 500;
-  font-family: inherit;
   cursor: pointer;
 }
 
@@ -173,6 +185,9 @@ header {
   position: relative;
   z-index: 1;
 }
+span.text {
+  margin-left: 13px;
+}
 
 /* get-in-touch section */
 .get-in-touch {
@@ -184,24 +199,36 @@ header {
   background-color: #0d1836;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   border-radius: 20px;
   padding: 20px 10px;
 }
 .get-in h2 {
-  font-size: 2em;
+  font-size: 64px;
+  font-weight: 700;
   margin: 0;
 }
 .get-in p {
-  font-size: 1em;
+  font-size: 24px;
+  font-weight: 500;
 }
 .contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 0.95em;
   margin-left: 8%;
+  color: #c1c1c1;
+}
+.email,
+.num {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 */
+.num,
+.numnum{
+  text-decoration: none;
 }
 
 /* footer section */
@@ -228,24 +255,36 @@ header {
   gap: 20px;
   flex-wrap: wrap;
 }
-.footer-section p,
+.footer-section p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-section h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
 .footer-section i {
-  margin: 4px 0;
+  margin: 5px 0;
   font-size: 14px;
 }
-.social-icons i {
-  font-size: 20px;
-  margin-right: 10px;
-  cursor: pointer;
-}
+
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .social-icons {
   display: flex;
   align-items: center;
+}
+
+i.fab {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 25px;
 }
 
 .hamburger {
@@ -257,10 +296,14 @@ header {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
   nav {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px;
+    /* padding: 10px 15px; */
+    padding: 0;
   }
 
   .hamburger {
@@ -273,7 +316,7 @@ header {
     display: none;
     flex-direction: column;
     margin-top: 10px;
-    margin-left: 80%;
+    margin-left: 82%;
   }
 
   .links.active {
@@ -283,10 +326,6 @@ header {
   .links ul {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .contact {
-    margin-top: 10px;
   }
   .footer-top {
     flex-direction: column;
@@ -312,24 +351,40 @@ header {
     gap: 10px;
     margin-bottom: 20px;
   }
+  .get-in-touch {
+    padding: 0;
+    margin-top: 20px;
+  }
   .get-in {
     width: 90%;
-    padding: 30px 16px;
+    padding: 20px 18px;
   }
 
   .get-in h2 {
-    font-size: 24px;
+    font-size: 44px;
   }
 
   .get-in p {
-    font-size: 13px;
+    font-size: 16px;
+  }
+  .contact-info .email,
+  .contact-info .num {
+    font-size: 12px;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .title h1 {
+    font-size: 60px;
+  }
+  .title p {
+    font-size: 20px;
+    line-height: 28px;
   }
   .category {
     padding-bottom: 5%;
   }
-  .contact-info {
-    font-size: 14px;
-  }
+
   .category-links ul {
     flex-direction: column;
     gap: 25px;
@@ -339,19 +394,61 @@ header {
     width: 80vw;
     text-align: center;
   }
-  .title h1 {
-    font-size: 72px;
+  .category h3 {
+    font-size: 26px;
   }
-  .title p {
-    font-size: 20px;
+  a.cat-link {
+    font-size: 16px;
   }
+
   .program-cards {
-    grid-template-columns: repeat(1, 1fr); 
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     gap: 16px;
   }
   .program-card {
     padding: 30px 16px;
   }
-  
+  .program-card h3 {
+    font-size: 20px;
+  }
+  .program-card p {
+    font-size: 16px;
+  }
+  .program-card .learn-more-link .text {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .learn-more-link .circle {
+    width: 30px;
+    height: 30px;
+  }
+  .learn-more-link .arrow {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1160px) {
+  .logo {
+    margin-left: 0;
+  }
+  nav {
+    padding: 0;
+  }
+  .get-in-touch {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .get-in {
+    width: 90%;
+    padding: 20px 18px;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .program-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+  }
 }

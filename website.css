@@ -7,6 +7,7 @@ body {
   background-color: #e6e8e8;
   margin: 0;
   padding: 0;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
 }
 .logo {
   display: flex;
@@ -48,7 +49,8 @@ nav {
 }
 .links a {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: #3b7c23;
 }
 
@@ -69,7 +71,7 @@ nav {
 .links a.active {
   color: black;
   border-bottom: 2px solid #4f813d;
-  font-weight: bold;
+  font-weight: 600;
 }
 .hamburger {
   display: none;
@@ -86,6 +88,7 @@ nav {
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  /* gap: 75px; */
   align-items: center;
   background-image: radial-gradient(circle at center, #b1cdac, #f4fff0, white);
   background-repeat: no-repeat;
@@ -100,11 +103,12 @@ nav {
   background-image: url(./images/index/11.png);
   background-repeat: no-repeat;
   background-size: 70px;
-  background-position: 20% 30%;
+  background-position: 50% 65%;
   max-width: 500px;
 }
 .left-text h1 {
-  font-size: 42px;
+  font-size: 64px;
+  font-weight: 400;
 }
 .hero-image {
   display: flex;
@@ -114,7 +118,8 @@ nav {
   color: #3b7c23;
 }
 .top p {
-  font-size: 1.1rem;
+  font-size: 24px;
+  font-weight: 400;
   margin-bottom: 20px;
   color: #232323;
 }
@@ -122,8 +127,10 @@ nav {
   display: inline-block;
   background-color: #3b7c23;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 18px;
   border-radius: 6px;
 }
 .play-btn:hover {
@@ -163,6 +170,7 @@ nav {
 }
 
 .features {
+  font-family: "Mulish", Courier, sans-serif;
   height: 60%;
   width: 100%;
   margin-left: -50px;
@@ -181,11 +189,15 @@ nav {
 }
 .feature-item img {
   background-color: #3b7c23;
-  padding: 10px 16px;
-  border-radius: 6px;
+  padding: 15px 18px;
+  border-radius: 30%;
+}
+.robotic-hand img {
+  background-color: #0d1836;
 }
 .feature-item p {
-  font-size: 0.95rem;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -203,17 +215,20 @@ nav {
   flex-wrap: wrap;
 }
 .about-text {
+  font-family: "Mulish", Courier, sans-serif;
   max-width: 500px;
 }
 .smaller {
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 400;
 }
 .bigger {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
 }
 .about-text p {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 1.6;
   margin-top: 20px;
 }
@@ -227,7 +242,9 @@ nav {
   border: 1px solid #27a810;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 14px;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-abt:hover {
@@ -243,17 +260,18 @@ nav {
   margin-left: 50px;
 }
 .service h4 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 700;
 }
-.services h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.service h2 {
+  font-size: 32px;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 .green-text {
   color: #27a810;
 }
- .four-images {
+.four-images {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -269,7 +287,7 @@ nav {
 }
 
 .serice-img {
-  flex: 0 0 25%; 
+  flex: 0 0 25%;
   height: 400px;
   border-radius: 12px;
   overflow: hidden;
@@ -292,12 +310,13 @@ nav {
   color: white;
 }
 .title {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 21.35px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 .description {
-  font-size: 14px;
+  font-size: 19.21px;
+  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -334,13 +353,13 @@ nav {
 
 .text-2 {
   background-color: #e7ffeb;
+  border-left: 5px solid #27a810;
 }
 .textt {
   display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
 }
 .title-date {
   margin-left: 5%;
@@ -349,18 +368,21 @@ nav {
   margin-right: 10%;
 }
 .title-1 {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 21.5px;
+  font-weight: 700;
   color: #323232;
   margin-bottom: 5px;
 }
 .date-1,
-.time {
-  font-size: 14px;
+.time h6 {
+  font-size: 14.35px;
+  font-weight: 400;
   color: #575757;
 }
 .link a {
   color: #575757;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* partners section */
@@ -368,7 +390,13 @@ nav {
   padding: 60px;
   text-align: center;
 }
+.partners .smaller {
+  font-size: 18px;
+  font-weight: 700;
+}
 .partners .bigger {
+  font-size: 38px;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 .partners-image {
@@ -386,7 +414,7 @@ nav {
   border-radius: 6px;
 }
 .partners-image img:hover {
-  opacity: 1;
+  opacity: 4;
 }
 
 /* space section */
@@ -395,12 +423,13 @@ nav {
   margin: 0 auto;
   background-color: #0d1836;
   color: white;
-  width: 60%;
+  width: 80%;
   padding: 40px 20px;
   border-radius: 20px;
 }
 .space p {
-  font-size: 39px;
+  font-size: 42px;
+  font-weight: 700;
 }
 .space button {
   background-color: #27a810;
@@ -409,7 +438,9 @@ nav {
   padding: 10px 16px;
   border-radius: 7px;
   cursor: pointer;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
 }
 
 /* review section */
@@ -418,7 +449,8 @@ nav {
   padding: 80px 60px;
 }
 .review h2 {
-  font-size: 2.2rem;
+  font-size: 32px;
+  font-weight: 700;
   color: #232323;
   margin-bottom: 50px;
 }
@@ -458,8 +490,19 @@ nav {
 .ayomide-profile p,
 .olumide-profile p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 16px;
+  font-weight: 400;
   margin-bottom: 20px;
+}
+p.green-text,
+p.small {
+  margin: 0;
+}
+p.green-text {
+  font-weight: 700;
+}
+p.small {
+  font-weight: 300;
 }
 
 /* ready section */
@@ -469,25 +512,28 @@ nav {
   color: white;
   text-align: center;
   padding: 10px 16px;
-  width: 60%;
+  width: 90%;
   border-radius: 20px;
 }
 .ready a {
-  background-color: #3b7c23;
+  background-color: #27a810;
   color: white;
   border-radius: 5px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 20px;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 13px 20px;
   border-radius: 6px;
 }
 .ready h2 {
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .ready p {
-  font-size: 12px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 /* footer section */
@@ -496,33 +542,146 @@ nav {
   background-color: #f5f5f5;
   padding: 40px 20px 20px;
 }
+
 .footer-top {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
-.footer-section p,
+
+.footer-section p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-section h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
 .footer-section i {
-  margin: 4px 0;
+  margin: 5px 0;
   font-size: 14px;
 }
 .social-icons i {
-  font-size: 20px;
+  font-size: 25px;
   margin-right: 10px;
   cursor: pointer;
 }
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .social-icons {
   display: flex;
   align-items: center;
 }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.num{
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1160px) {
+  .left-text {
+    max-width: 999px;
+    background-size: 55px;
+    background-position: 20% 60%;
+  }
+  .hero-image {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  .background {
+    height: 532px;
+    width: 600px;
+  }
+  .hero-image-2 {
+    width: 400px;
+    height: 600px;
+  }
+  .about {
+    margin-left: 0;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .about-text {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .about-image {
+    margin: 0 auto;
+  }
+  .about-image img{
+    width: 500px;
+  }
+  .service {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .four-images {
+    flex-wrap: nowrap;
+    padding-left: 10px;
+  }
+
+  .serice-img {
+    flex: 0 0 80%;
+    max-width: 40%;
+  }
+  .text-content .title {
+    font-size: 20.35px;
+  }
+
+  .text-content .description {
+    font-size: 16px;
+  }
+  .event-3 {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 20px;
+    gap: 30px;
+  }
+  .event-image {
+    width: 90%;
+    margin-left: 0;
+  }
+  .event-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .textt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px;
+  }
+  .title-date {
+    margin-left: 0;
+  }
+  .link {
+    margin-right: 0;
+  }
+  .space {
+    width: 90%;
+    padding: 25px 16px;
+    border-radius: 16px;
+  }
+  .review {
+    padding: 20px;
+  }
+}
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
   nav {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -549,9 +708,13 @@ nav {
     flex-direction: column;
     gap: 15px;
   }
+  .links ul li {
+    margin-left: 30px;
+  }
 
   .contact {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
   .footer-top {
     flex-direction: column;
@@ -581,6 +744,15 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+  .left-text {
+    background-position: 53% 55%;
+  }
+  .left-text h1 {
+    font-size: 44px;
+  }
+  .left-text p {
+    font-size: 18px;
+  }
   .shape {
     flex-direction: column;
     align-items: stretch;
@@ -597,6 +769,7 @@ nav {
     margin-left: 0;
     padding: 30px 20px;
     gap: 20px;
+    border-radius: 0;
   }
 
   .feature-item {
@@ -620,9 +793,14 @@ nav {
     text-align: center;
     max-width: 100%;
   }
-
+  .about-text .smaller {
+    font-size: 10px;
+  }
+  .about-text .bigger {
+    font-size: 30px;
+  }
   .about-text p {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .about-image img {
@@ -633,22 +811,13 @@ nav {
   .service {
     margin-left: 0;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
   }
-
+  .service h4 {
+    font-size: 14px;
+  }
   .service h2 {
-    font-size: 1.8rem;
-    line-height: 1.4;
-  }
-
-  .service {
-    margin-left: 0;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .service h2 {
-    font-size: 1.8rem;
+    font-size: 28px;
     line-height: 1.4;
   }
 
@@ -663,12 +832,12 @@ nav {
     height: 400px;
   }
 
-  .title {
-    font-size: 16px;
+  .text-content .title {
+    font-size: 16.35px;
   }
 
-  .description {
-    font-size: 14px;
+  .text-content .description {
+    font-size: 12px;
   }
   .event-3 {
     flex-direction: column;
@@ -706,40 +875,48 @@ nav {
   }
 
   .title-1 {
-    font-size: 18px;
+    font-size: 18.52px;
   }
 
   .date-1,
-  .time {
-    font-size: 13px;
+  .time h6 {
+    font-size: 12.35px;
   }
 
   .link a {
-    font-size: 14px;
+    font-size: 12px;
   }
+  .partners .smaller {
+    font-size: 16px;
+  }
+  .partners .bigger {
+    font-size: 28px;
+  }
+
   .space {
     width: 90%;
-    padding: 30px 16px;
+    padding: 20px 16px;
     border-radius: 16px;
   }
 
-  .space p {
-    font-size: 24px;
+  .space-in p {
+    font-size: 28px;
     line-height: 1.4;
   }
 
-  .space button {
-    font-size: 16px;
-    padding: 10px 20px;
+  .space-in .btn {
+    font-size: 12px;
   }
   .review {
-    padding: 60px 20px;
+    padding: 10px;
   }
 
   .review h2 {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .review-cards p {
+    font-size: 12px;
   }
 
   .review-cards {
@@ -748,20 +925,26 @@ nav {
 
   .card {
     flex: 0 0 80vw;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
   }
+  .ayomide-profile-image img,
+  .olumide-profile-image img {
+    width: 80px;
+    height: 80px;
+  }
+
   .ready {
     width: 90%;
-    padding: 30px 16px;
+    padding: 20px 16px;
   }
 
   .ready h2 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   .ready p {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .ready a {

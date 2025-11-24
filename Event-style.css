@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  font-family: "IBM Plex Sans", Courier, sans-serif;
 }
 
 /* header section */
@@ -27,7 +28,8 @@ body {
 }
 .links a {
   text-decoration: none;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
 }
 .links a:hover {
@@ -55,19 +57,22 @@ header {
 
 .title {
   margin-left: 5%;
+  font-size: 96px;
+  font-weight: 400;
+  font-family: "Junge", Courier, sans-serif;
 }
 /* !!!!!!!!!!!!!! */
 .links a.active {
-  color: #3b7c23;
-  background-color: white;
-  padding: 10px;
-  border-radius: 5px;
+  color: #7dec54;
+  font-weight: 500;
 }
 
 /* text section */
 .text h3 {
   color: #4c8337;
   margin-left: 3%;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 /* event section */
@@ -95,32 +100,53 @@ header {
 }
 .event-text {
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 .event-text h2 {
-  font-size: 2rem;
+  font-size: 40px;
+  font-weight: 700;
   margin-bottom: 0;
 }
 .event-text p {
-  font-size: 1.3rem;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.event-text .design {
+  background-color: #f8f8f8;
+  padding: 0px 15px;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-left: 3px solid #3b7c23;
+}
+p.date {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .event-text ul {
   list-style: none;
   padding: 0;
 }
-.event-text li:hover {
-  padding: 8px 16px;
-  border-radius: 999px;
-  background-color: #e9efe9;
+.event-text li a:hover {
+  color: black;
 }
 
 .event-text a {
   color: #3b7c23;
-  font-size: 14px;
+  font-size: 8px;
+  font-weight: 500;
 }
 
 .Event2 {
   background-color: #f6f9f5;
+}
+.design p {
+  font-size: 19px;
 }
 /* get-in-touch section */
 .get-in-touch {
@@ -132,24 +158,35 @@ header {
   background-color: #0d1836;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
+  width: 80%;
   border-radius: 20px;
   padding: 20px 10px;
 }
 .get-in h2 {
-  font-size: 2em;
+  font-size: 64px;
+  font-weight: 700;
   margin: 0;
 }
 .get-in p {
-  font-size: 1em;
+  font-size: 24px;
+  font-weight: 500;
 }
 .contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  font-size: 0.95em;
   margin-left: 8%;
+  color: #c1c1c1;
+}
+.email,
+.num {
+  font-size: 20px;
+  font-weight: 500;
+}
+.num,
+.numnum{
+  text-decoration: none;
 }
 
 /* footer section */
@@ -176,24 +213,35 @@ header {
   gap: 20px;
   flex-wrap: wrap;
 }
-.footer-section p,
-.footer-section i {
-  margin: 4px 0;
-  font-size: 14px;
+.footer-section p {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
 }
-.social-icons i {
-  font-size: 20px;
-  margin-right: 10px;
-  cursor: pointer;
+.footer-section h4 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer-section i {
+  margin: 5px 0;
+  font-size: 14px;
 }
 .footer-bottom {
   text-align: center;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 24px;
+  font-weight: 400;
 }
 .social-icons {
   display: flex;
   align-items: center;
+}
+
+i.fab {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 25px;
 }
 
 .hamburger {
@@ -205,15 +253,18 @@ header {
 }
 
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
   nav {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 0;
   }
 
   .hamburger {
     display: block;
-    margin-right: 50px;
+    /* margin-right: 50px; */
   }
 
   .links {
@@ -221,7 +272,7 @@ header {
     display: none;
     flex-direction: column;
     margin-top: 10px;
-    margin-left: 85%;
+    margin-left: 82%;
   }
 
   .links.active {
@@ -231,10 +282,6 @@ header {
   .links ul {
     flex-direction: column;
     gap: 15px;
-  }
-
-  .contact {
-    margin-top: 10px;
   }
   .footer-top {
     flex-direction: column;
@@ -260,35 +307,95 @@ header {
     gap: 10px;
     margin-bottom: 20px;
   }
+  .get-in-touch {
+    padding: 0;
+    margin-top: 20px;
+  }
   .get-in {
     width: 90%;
-    padding: 30px 16px;
+    padding: 20px 18px;
   }
 
   .get-in h2 {
-    font-size: 24px;
+    font-size: 44px;
   }
 
   .get-in p {
-    font-size: 13px;
+    font-size: 16px;
   }
-
-  .contact-info {
-    font-size: 14px;
+  .contact-info .email,
+  .contact-info .num {
+    font-size: 12px;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .title h1 {
+    font-size: 60px;
+  }
+  .text h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .events {
+    margin: 0;
   }
   .event {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
   .event-image {
     width: 60%;
+    margin: 10px 0;
   }
   .event-text {
     width: 80%;
   }
-  .Event2 .event-image{
+  .Event2 .event-image {
     order: 2;
   }
-  .Event2 .event-text{
+  .Event2 .event-text {
     order: 1;
+  }
+  .event h2 {
+    font-size: 30px;
+  }
+  .event p {
+    font-size: 12px;
+  }
+  .event p.date {
+    font-size: 10px;
+  }
+  .design p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1160px) {
+  .logo {
+    margin-left: 0;
+  }
+  nav {
+    padding: 10px 0;
+  }
+  .get-in-touch {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .get-in {
+    width: 90%;
+    padding: 20px 18px;
+  }
+  .title {
+    margin-left: 0;
+  }
+  .event-image {
+    width: 40%;
+  }
+  .event-text {
+    width: 50%;
+  }
+  .Event2{
+    gap: 70px;
   }
 }
